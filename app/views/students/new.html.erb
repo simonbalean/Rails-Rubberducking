@@ -1,0 +1,8 @@
+<h1>Create a Student!</h1>
+<br>
+<%= form_for :student do |f| %>
+  name: <%= f.text_field :name %><br />
+  mod : <%= f.text_field :mod %><br />
+
+  <%= f.submit %>
+<% end %>

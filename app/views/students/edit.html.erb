@@ -1,0 +1,13 @@
+<h1>Edit your Student!</h1>
+<br>
+
+<%= form_for :student do |f| %>
+
+  name: <%= f.text_field :name %><br />
+  mod : <%= f.text_field :mod %><br />
+
+  <%= f.submit %>
+
+  <%= button_to("Destroy Student", student_path(@student), method: "destroy") %>
+
+<% end %>

@@ -1,0 +1,8 @@
+<h1>Create a duck!</h1>
+<br>
+<%= form_for :duck do |f| %>
+  name: <%= f.text_field :name %><br />
+  description : <%= f.text_field :description %><br />
+
+  <%= f.submit %>
+<% end %>
